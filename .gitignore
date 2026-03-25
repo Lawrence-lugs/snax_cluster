@@ -27,3 +27,6 @@ gmon.out
 test_run_dir
 target/streams/
 target/scala*
+
+
+sim.vcd

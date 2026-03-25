@@ -1,5 +1,10 @@
 {
   "image": "ghcr.io/kuleuven-micas/snax:main",
+
+  "containerEnv": {
+    "PATH": "/pixi/.pixi/envs/default/bin:/root/.pixi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+  },
+
   "customizations": {
     "vscode": {
       "extensions": [

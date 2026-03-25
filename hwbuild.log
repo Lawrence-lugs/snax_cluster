@@ -1,0 +1,41 @@
+make: Entering directory '/workspaces/snax_cluster/target/snitch_cluster'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+mkdir -p work-vlt/tb/
+g++  -std=c++20 -pthread -latomic -I work-vlt -I /pixi/.pixi/envs/default/bin/../include -I /pixi/.pixi/envs/default/bin/../include/vltstd -I work-vlt/riscv-isa-sim/include -I /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test -I /workspaces/snax_cluster/target/snitch_cluster//test -c /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test/bootrom.cc -o work-vlt/tb/bootrom.o
+mkdir -p work-vlt/tb/
+g++  -std=c++20 -pthread -latomic -I work-vlt -I /pixi/.pixi/envs/default/bin/../include -I /pixi/.pixi/envs/default/bin/../include/vltstd -I work-vlt/riscv-isa-sim/include -I /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test -I /workspaces/snax_cluster/target/snitch_cluster//test -c /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test/ipc.cc -o work-vlt/tb/ipc.o
+mkdir -p work-vlt/tb/
+g++  -std=c++20 -pthread -latomic -I work-vlt -I /pixi/.pixi/envs/default/bin/../include -I /pixi/.pixi/envs/default/bin/../include/vltstd -I work-vlt/riscv-isa-sim/include -I /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test -I /workspaces/snax_cluster/target/snitch_cluster//test -c /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test/common_lib.cc -o work-vlt/tb/common_lib.o
+mkdir -p work-vlt/tb/
+g++  -std=c++20 -pthread -latomic -I work-vlt -I /pixi/.pixi/envs/default/bin/../include -I /pixi/.pixi/envs/default/bin/../include/vltstd -I work-vlt/riscv-isa-sim/include -I /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test -I /workspaces/snax_cluster/target/snitch_cluster//test -c /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test/verilator_lib.cc -o work-vlt/tb/verilator_lib.o
+mkdir -p work-vlt/tb/
+make: *** No rule to make target 'work-vlt/vlt/verilated.o', needed by 'bin/snitch_cluster.vlt'.  Stop.
+make: *** Waiting for unfinished jobs....
+g++  -std=c++20 -pthread -latomic -I work-vlt -I /pixi/.pixi/envs/default/bin/../include -I /pixi/.pixi/envs/default/bin/../include/vltstd -I work-vlt/riscv-isa-sim/include -I /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test -I /workspaces/snax_cluster/target/snitch_cluster//test -c /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test/tb_bin.cc -o work-vlt/tb/tb_bin.o
+In file included from /workspaces/snax_cluster/target/snitch_cluster/../../target/common/test/verilator_lib.cc:9:
+work-vlt/Vtestharness.h:11:10: fatal error: verilated.h: No such file or directory
+   11 | #include "verilated.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:324: work-vlt/tb/verilator_lib.o] Error 1
+make: Leaving directory '/workspaces/snax_cluster/target/snitch_cluster'

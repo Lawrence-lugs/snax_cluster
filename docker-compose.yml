@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  snax:
+    image: ghcr.io/kuleuven-micas/snax:main
+    container_name: snax
+    stdin_open: true     # equivalent to -i
+    tty: true            # equivalent to -t
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
